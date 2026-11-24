@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/../config.php';
-require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/functions.php';
 
 $pageTitle = 'Beranda';
 
@@ -17,7 +17,7 @@ $produkTerbaru = $pdo->query(
     . 'ORDER BY p.id DESC LIMIT 5'
 )->fetchAll();
 ?>
-<?php require_once __DIR__ . '/../includes/header.php'; ?>
+<?php require_once __DIR__ . '/includes/header.php'; ?>
 
 <div class="py-5">
     <div class="container">
@@ -100,4 +100,4 @@ $produkTerbaru = $pdo->query(
     </div>
 </div>
 
-<?php require_once __DIR__ . '/../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
